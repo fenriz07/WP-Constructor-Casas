@@ -1,0 +1,379 @@
+.mk-grid{
+  max-width: 100% !important;
+}
+
+#app{
+  margin-top: 40px;
+}
+
+#contenedor{
+  width: 60%;
+  float: left;
+  padding: 15px;
+  background-color: #c5c5c5;
+  overflow-y: scroll;
+  height: 700px;
+}
+
+#aside{
+  width: 40%;
+  float: left;
+  background-color: #545450;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.partner_option{
+   border-bottom: 1px solid white;
+   color:white !important;
+   padding-bottom: 10px;
+}
+
+.row_title{
+  display: flex;
+
+}
+
+.s_a_c_1,.s_a_c_2,.s_a_c_3{
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.titulo_row{
+  color:white !important;
+  text-align: center;
+}
+
+.titulo_row_opcion >  a{
+  color:white !important;
+  font-size: 14px !important;
+}
+
+.titulo_row_opcion:hover{
+  cursor: pointer;
+}
+
+.sub_option{
+  text-transform: capitalize !important;
+  margin-left: 8%;
+}
+
+.menu-item-link{
+  color:white !important;
+}
+
+
+.contenedor_opcion{
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.s_a_o_1,.s_a_o_2,.s_a_o_3{
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.img_option{
+  width: 100%;
+  height: 80px !important;
+  border: 1px solid #413c3c;
+  margin-bottom: 5px;
+}
+
+.img_option_father{
+  width: 100%;
+  height: 80px !important;
+  border: 1px solid #413c3c;
+}
+
+.active:after {
+  -webkit-animation: opacity-key 0.7s 1;
+  -moz-animation: opacity-key 0.7s 1;
+  -o-animation: opacity-key 0.7s 1;
+  animation: opacity-key 0.7s 1;
+  float: left;
+  margin-right: 5px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #cccccc;
+  content: ""; }
+
+@keyframes opacity-key {
+  0% {
+    opacity: 0.1; }
+  20% {
+    opacity: 0.3; }
+  45% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.7; }
+  83% {
+    opacity: 0.8; }
+  93% {
+    opacity: 0.9; }
+  100% {
+    opacity: 1; } }
+
+
+/*Tabs*/
+.tab{
+  display: none;
+}
+
+.titulo_row_opcion > a:hover:before {
+  -webkit-animation: opacity-key 0.7s 1;
+  -moz-animation: opacity-key 0.7s 1;
+  -o-animation: opacity-key 0.7s 1;
+  animation: opacity-key 0.7s 1;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.titulo_row_opcion > a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.titulo_row_opcion > a:hover {
+  color: #fff;
+}
+
+.titulo_row_opcion > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  margin-bottom: -5px;
+ }
+
+.contendor_marmol{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.contendor_marmol .solados_alicatados_vivienda > img,.contendor_marmol .solados_alicatados_dormitorios > img,.contendor_marmol > .solados_alicatados_banos > img,.contendor_marmol .solados_alicatados_solarium_terrazas > img{
+  height: 200px !important;
+}
+
+.contendor_suelos_madera .solados_alicatados_vivienda > img,.contendor_suelos_madera .solados_alicatados_dormitorios > img,.contendor_suelos_madera .solados_alicatados_solarium_terrazas > img{
+  height: 125px !important;
+}
+
+.contendor_suelos_porcelanicos .solados_alicatados_vivienda > img,.contendor_suelos_porcelanicos .solados_alicatados_dormitorios > img,.contendor_suelos_porcelanicos .solados_alicatados_solarium_terrazas > img,.contendor_suelos_porcelanicos .solados_alicatados_semi_sotano > img{
+  height: 147px !important;
+}
+
+.contendor_suelos_tarima_ceramica .solados_alicatados_vivienda > img,.contendor_suelos_tarima_ceramica .solados_alicatados_dormitorios > img,.contendor_suelos_tarima_ceramica .solados_alicatados_solarium_terrazas > img, .contendor_suelos_tarima_ceramica .solados_alicatados_semi_sotano > img{
+  height: 86px !important;
+}
+
+.suelos_madera_exterior{
+  height: 90px !important;
+width: 100%;
+}
+
+.contendor_suelos_madera{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contendor_suelos_porcelanicos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contendor_suelos_tarima_ceramica{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contendor_suelo_maderas_exterior,.contendor_techos_doble_altura{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.contendor_techos_doble_altura_img{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.solados_alicatados_vivienda_techos_doble_alturalr,.solados_alicatados_dormitorio_techos_doble_alturalr{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 5px;
+}
+.solados_alicatados_vivienda_techos_doble_altura,.solados_alicatados_dormitorio_techos_doble_altura{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.techos_doble_altura_img_rl{
+  height: 100% !important;
+}
+
+.solados_alicatados_vivienda,.solados_alicatados_dormitorios,.solados_alicatados_solarium_terrazas,.solados_alicatados_semi_sotano,.solados_alicatados_banos{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+  cursor: pointer;
+}
+
+
+/*Scroll 2*/
+
+.subopcion{
+  margin-left: 10%;
+}
+
+.subopcion input{
+  margin-left: 5%;
+}
+
+.top_border{
+  border-top: 1px solid white;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+.contendor_encimeras,.contendor_cocina_lacados,.contendor_cocina_maderas,.contendor_diseno_lavados{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contendor_sistema_frio,.contendor_vinoteca{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.cocina_planta_baja_encimera,.cocina_planta_baja_muebles,.contendor_cocina_maderas,.cocina_sistema_frio_planta_baja,.cocina_vinoteca_planta_baja,.cocina_semi_sotano_encimera,.cocina_semi_sotano_muebles,.cocina_sistema_frio_semi_sotano,.cocina_vinoteca_semi_sotano{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+  cursor: pointer;
+}
+.cocina_vinoteca_planta_baja > img,.cocina_vinoteca_semi_sotano > img{
+  width: 100%;
+  height: 500px;
+}
+
+.cocina_planta_baja_encimera > img,.contendor_cocina_lacados > .cocina_planta_baja_muebles > img,.cocina_semi_sotano_encimera > img,.contendor_cocina_lacados > .cocina_semi_sotano_muebles > img{
+  height: 180px;
+  width: 100%;
+}
+
+.contendor_cocina_maderas > .cocina_planta_baja_muebles > img,.contendor_cocina_maderas > .cocina_semi_sotano_muebles > img{
+  height: 90px;
+  width: 100%;
+}
+
+.banos_diseno_lavados{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.banos_diseno_lavados > img{
+  width: 100%;
+  height: 265px;
+}
+
+.ncurpoi{
+  cursor: auto !important;
+}
+
+.titulo_filadb{
+  text-align: center;
+}
+
+.titulo_right{
+  margin-left:10% !important;
+}
+
+.producto{
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-color: white !important;
+}
+
+.contendor_hidromasaje,.contendor_niveles_hidro_masaje{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banos_hidro_masaje_principallr,.banos_hidro_masaje_secundariolr{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+}
+.banos_hidro_masaje_principal,.banos_hidro_masaje_secundario{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.banos_hidro_masaje_principal > img,.banos_hidro_masaje_secundario > img{
+  width: 100%;height: 143px;
+}
+.banos_hidro_masaje_principallr > img{
+  width: 100%;
+  height: 257px;
+}
+
+.p_nivel_hidromasaje{
+  text-align: center;
+}
+.contendor_puertas_paso,.contendor_fondo_armario,.contendor_vaso_piscina,.contendor_vaso_piscina_not_select{
+  display: flex;
+  flex-wrap: wrap;
+}
+.carpinteria_interior_puerta_paso,.carpinteria_interior_fondo_armario,.carpinteria_interior_vaso_piscina{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+  cursor: pointer;
+}
+.carpinteria_interior_vaso_piscinalr{
+  flex: 1;
+  -webkit-flex: 1;
+  margin: 4px;
+}
+
+.carpinteria_interior_vaso_piscinalr > img {
+  width: 100%;
+  height: 400px;
+}
+.carpinteria_interior_vaso_piscina > img{
+  width: 100%;
+  height: 150px;
+}
+
+.carpinteria_interior_puerta_paso > img,.carpinteria_interior_fondo_armario > img{
+  width: 100%;
+  height: 110px;
+}
+
+
+/*.marmol{
+  width: 19%;
+  height: 144px !important;
+}*/
